@@ -1,3 +1,0 @@
-/Users/haiyang/Documents/01code/GAMES101/Assignment0/build/CMakeFiles/rebuild_cache.dir
-/Users/haiyang/Documents/01code/GAMES101/Assignment0/build/CMakeFiles/edit_cache.dir
-/Users/haiyang/Documents/01code/GAMES101/Assignment0/build/CMakeFiles/Transformation.dir
