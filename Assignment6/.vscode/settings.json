@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "complex": "cpp",
+        "*.tcc": "cpp",
+        "string_view": "cpp",
+        "fstream": "cpp",
+        "array": "cpp"
+    }
+}

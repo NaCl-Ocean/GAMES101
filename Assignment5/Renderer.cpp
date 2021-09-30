@@ -224,13 +224,13 @@ void Renderer::Render(const Scene& scene)
         {
             // generate primary ray direction
             // First step: we need to convert the pixel coor (x,y) to NDC(x:[-1.0, 1.0], y[-1.0, 1.0], z[-1.0, 1.0])
-            float x = (i+0.5f) * 2/scene.width - 1.0f ;
-            float y = (j+0.5f) * 2/scene.height - 1.0f;
-
-            // Second step: we rescale the NDC space to (x:[l, r], y:[t, b])
             // pay attention to why we use -y, but not y
             // in the pixel coor, y=0 is upper side, but in NDC space, y=0 is downside
-            y = -y * scale;
+            float x = (i+0.5f) * 2/scene.width - 1.0f ;
+            float y = 1.0f - (j+0.5f) * 2/scene.height;
+
+            // Second step: we rescale the NDC space to (x:[l, r], y:[t, b])
+            y = y * scale;
             x = x * scale * imageAspectRatio;
             // TODO: Find the x and y positions of the current pixel to get the direction
             // vector that passes through it.
