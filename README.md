@@ -1,3 +1,5 @@
+# GAMES101
+Homework for GAMES 101
 
-I've finished task ...
+You can find the result for each homework under the corresponding directory, like `result.png` or `results` directory.
 
